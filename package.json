@@ -1,0 +1,63 @@
+{
+  "name": "@linnnnyue/dsh-card",
+  "version": "0.1.0",
+  "description": "DSH 交互卡片插件：模型在对话里直接渲染可交互的 HTML/SVG 卡片。移植自 HanaAgent 的 show_card，替换 dsh-genui 的卡片职责。支持蓝色鲸鱼 / 纸感 / Claude 三套主题。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "SPEC.md"
+  ],
+  "license": "MIT",
+  "author": "LinnnnYue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinnnnYue/dsh-card.git"
+  },
+  "homepage": "https://github.com/LinnnnYue/dsh-card#readme",
+  "bugs": {
+    "url": "https://github.com/LinnnnYue/dsh-card/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "card",
+    "interactive",
+    "html",
+    "iframe",
+    "show_card"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-tool",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ],
+      "immediately": true
+    },
+    "version": "0.1.0"
+  },
+  "dshTarget": "0.2.1-rc.3"
+}

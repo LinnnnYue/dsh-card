@@ -1,0 +1,10 @@
+# dsh-card —— 交互卡片插件
+#
+# 职责：show_card 工具 + /card/:id HTTP 路由 + tool.call.toolview 渲染器
+# 与 dsh-genui 互斥，装本插件前请先卸载 dsh-genui。
+- insert:
+    - id: dsh-card
+      name: '@linnnnyue/dsh-card'
+      inject: [tools, webServer]
+      config:
+        enabled: true
