@@ -5,3 +5,5 @@ node_modules/
 *.bak-*
 .DS_Store
 Thumbs.db
+# 预览产物
+preview/

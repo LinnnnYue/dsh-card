@@ -130,3 +130,33 @@ dsh-card/
     ├── cards.js       LRU + HTML 包装（194 行）
     └── themes.js      三套主题色板
 ```
+
+---
+
+## 开发与测试
+
+```bash
+npm run test          # 构建契约测试（30 项，零依赖，无需浏览器）
+npm run test:e2e      # 端到端测试（25 项，需 Chrome/Chromium + playwright）
+npm run test:all      # 两个都跑
+```
+
+端到端测试覆盖：AMWH 四组件渲染、三态勾叉颜色、**真实点击下载按钮并拦截产物**、
+PNG/HTML 产物内容与安全性校验（无脚本残留 / 无工具条 / 有 DOCTYPE）、四主题变量解析。
+
+需要自定义浏览器路径时：
+```bash
+CHROME_PATH=/path/to/chrome PLAYWRIGHT_PATH=/path/to/playwright npm run test:e2e
+```
+
+视觉复检（生成四主题预览图到 `preview/`）：
+```bash
+node test/preview-themes.mjs
+```
+
+---
+
+## 版本
+
+- **0.2.0** —— AMWH 图解方法论 + 下载工具条 + 设计评审 F1-F8 返工
+- 0.1.0 —— 首版三工具三主题
