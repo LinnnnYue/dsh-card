@@ -1,7 +1,7 @@
 {
   "name": "@linnnnyue/dsh-card",
-  "version": "0.1.0",
-  "description": "DSH 交互卡片插件：模型在对话里直接渲染可交互的 HTML/SVG 卡片。移植自 HanaAgent 的 show_card，替换 dsh-genui 的卡片职责。支持蓝色鲸鱼 / 纸感 / Claude 三套主题。",
+  "version": "0.2.0",
+  "description": "DSH 交互卡片插件：模型在对话里直接渲染可交互的 HTML/SVG 卡片（蓝色鲸鱼 / 纸感 / Claude 三主题）。内置 AMWH 图解方法论组件（对照表 / 结论条 / 时序条）与右上角 PNG / HTML 下载。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -57,7 +57,7 @@
       ],
       "immediately": true
     },
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "dshTarget": "0.2.1-rc.3"
 }

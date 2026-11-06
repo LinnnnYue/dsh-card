@@ -757,7 +757,7 @@ window.__ModuleLoader__.load({
           h('iframe', {
             ref: iframeRef,
             src: '/card/' + encodeURIComponent(cardId),
-            sandbox: 'allow-scripts',
+            sandbox: 'allow-scripts allow-downloads',
             title: title || 'Interactive card',
             'data-dsh-card-frame': '',
           })
