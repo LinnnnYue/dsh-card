@@ -1,0 +1,85 @@
+<style>
+.kk{font:400 10px/1.3 var(--font-ui,system-ui);letter-spacing:.18em;color:var(--text-muted)}
+.tk{display:block;width:2px;height:14px;background:var(--accent)}
+.cl{flex:1;height:22px;border-radius:2px;background:var(--accent-light);border:.5px solid var(--border-l2)}
+.cl.v{background:transparent;border:1px dashed var(--accent)}
+.cl-t{flex:1;text-align:center;font:400 11px/1 var(--font-ui,system-ui);letter-spacing:.02em;color:var(--text-tertiary);overflow:hidden;white-space:nowrap}
+.cl-t.v{color:var(--accent);font-weight:500}
+.dt{width:12px;height:12px;border-radius:2px;background:var(--accent-light);border:1px solid var(--accent);box-sizing:border-box;opacity:.8}
+.dt.b{background:var(--danger)}
+.bd{display:grid;grid-template-columns:1.55fr 1fr;gap:44px;align-items:start}
+@media (max-width:700px){.bd{grid-template-columns:1fr!important;gap:30px!important}}
+</style>
+
+<article style="max-width:900px">
+
+  <div style="display:flex;align-items:baseline;gap:12px;font-family:var(--font-ui,system-ui);font-size:.66rem;color:var(--text-tertiary);letter-spacing:.05em">
+    <span class="kk" style="font-size:10px">会话交接单</span>
+    <span style="flex:1"></span>
+    <span>3 次提交 GPG 签名 &nbsp;·&nbsp; <span style="font-family:var(--font-mono);color:var(--text-secondary)">7c271de</span></span>
+    <span style="border:.5px solid var(--danger);color:var(--danger);padding:2px 8px;border-radius:2px;font-size:.6rem;letter-spacing:.18em">未签收</span>
+  </div>
+  <div style="height:1px;background:var(--border);margin:11px 0 0"></div>
+
+  <div style="position:relative;padding:36px 56px 0 0">
+    <div style="display:flex;align-items:baseline;gap:8px;font-family:var(--font-ui,system-ui);font-size:.74rem;color:var(--text-tertiary);letter-spacing:.14em">
+      <span>还剩</span><span style="color:var(--accent);font-weight:600;font-size:1.2rem;letter-spacing:0;font-variant-numeric:tabular-nums">1</span><span>步</span>
+    </div>
+    <h1 style="margin:14px 0 0;font-size:2.4rem;font-weight:500;line-height:1.1;letter-spacing:-.014em;color:var(--text)">装进 <span style="font-family:var(--font-mono);font-size:.8em;letter-spacing:-.03em">web profile</span></h1>
+    <p style="margin:17px 0 0;font-size:.88rem;line-height:1.66;color:var(--text-secondary);max-width:30em">代码、测试、推送全完了。这一步没有技术风险 —— 只等你点头。</p>
+    <div style="position:absolute;right:4px;top:22px;writing-mode:vertical-rl;letter-spacing:.2em;font-family:var(--font-ui,system-ui);font-size:.64rem;color:var(--text-muted)">11.02 &nbsp;→&nbsp; 11.07</div>
+  </div>
+
+  <div style="display:flex;gap:6px;margin:36px 0 0">
+    <div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div><div class="cl v"></div>
+  </div>
+  <div style="display:flex;gap:6px;margin-top:8px">
+    <div class="cl-t">学 · 4 铁律</div><div class="cl-t">写 · 4 组件</div><div class="cl-t">加下载</div><div class="cl-t">找评审</div><div class="cl-t">修 + 推</div><div class="cl-t v">待你</div>
+  </div>
+
+  <div style="height:1px;background:var(--border);margin:34px 0 24px"></div>
+
+  <div class="bd">
+
+    <div>
+      <div class="kk">测试 &nbsp;·&nbsp; 55 项</div>
+      <div style="display:flex;align-items:flex-end;gap:16px;margin-top:15px">
+        <div style="font-size:2.4rem;font-weight:600;line-height:.84;color:var(--text);font-variant-numeric:tabular-nums">55</div>
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;align-items:flex-end;gap:24px">
+            <div style="display:flex;gap:5px"><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span></div>
+            <div style="display:flex;gap:5px"><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span></div>
+          </div>
+          <div style="height:1px;background:var(--border-l2);margin-top:5px"></div>
+          <div style="display:flex;gap:24px;margin-top:6px;font-family:var(--font-ui,system-ui);font-size:.64rem;color:var(--text-tertiary)">
+            <div style="width:205px">30 构建契约</div>
+            <div style="width:170px">25 端到端</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="kk">过程 &nbsp;·&nbsp; 评审 8 项 → 6 我看见了 · 2 在视野外</div>
+      <div style="position:relative;margin-top:15px;padding-top:0">
+        <div style="display:flex;gap:5px;align-items:flex-end">
+          <span class="dt"></span><span class="dt"></span><span class="dt"></span><span class="dt"></span><span class="dt"></span><span class="dt"></span>
+        </div>
+        <div style="height:1px;background:var(--border-l3);margin:0 0 0;width:calc(100% - 40px)"></div>
+        <div style="display:flex;gap:5px;margin-top:0">
+          <span style="display:inline-block;width:12px;height:15px;background:var(--danger);border-radius:0 0 2px 2px"></span>
+          <span style="display:inline-block;width:12px;height:15px;background:var(--danger);border-radius:0 0 2px 2px"></span>
+        </div>
+      </div>
+      <div style="margin-top:9px;font-size:.72rem;line-height:1.55;color:var(--text-muted);font-family:var(--font-mono)">\s 双重转义 &nbsp;·&nbsp; 缺 DOCTYPE</div>
+      <div style="margin-top:3px;font-size:.72rem;line-height:1.55;color:var(--text-muted)">↑ 线下这两枚，我全程没看见</div>
+    </div>
+
+  </div>
+
+  <div style="border-left:2px solid var(--accent);padding:2px 0 2px 16px;margin:52px 0 6px">
+    <p style="margin:0;font-size:.92rem;line-height:1.7;color:var(--text);font-style:italic">78 秒的视频换四条铁律；一次外人评审，换两个我死活看不见的 bug。</p>
+    <p style="margin:8px 0 0;font-size:.78rem;line-height:1.6;color:var(--text-muted)">不是笨 —— 读自己写的东西，本来就看不出来。</p>
+  </div>
+
+</article>

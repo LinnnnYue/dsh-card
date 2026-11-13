@@ -1,0 +1,77 @@
+<h1 style="margin:0 0 3px">这次会话做了什么</h1>
+<div style="font:400 11.5px/1.5 var(--font-ui);color:var(--text-muted);margin-bottom:14px">2026-11-02 → 11-07 · dsh-card 0.1.0 → 0.2.0</div>
+
+<div style="display:flex;gap:12px;align-items:stretch;margin-bottom:16px">
+  <div style="flex:1;padding:11px 14px;background:var(--accent-light);border-left:2px solid var(--accent);border-radius:0 4px 4px 0">
+    <div style="font:500 10.5px/1 var(--font-ui);color:var(--accent);letter-spacing:.5px;margin-bottom:6px">已完成</div>
+    <div style="font:400 13px/1.55 var(--font-ui)">功能齐了 · 测试全绿 · 代码在 GitHub</div>
+  </div>
+  <div style="flex:1;padding:11px 14px;background:var(--danger-light, rgba(139,44,31,.07));border-left:2px solid var(--danger);border-radius:0 4px 4px 0">
+    <div style="font:500 10.5px/1 var(--font-danger);color:var(--danger);letter-spacing:.5px;margin-bottom:6px">还差一步</div>
+    <div style="font:400 13px/1.55 var(--font-ui)">装进 web profile</div>
+  </div>
+</div>
+
+<div style="margin:0 0 18px">
+  <div style="font:500 10.5px/1 var(--font-ui);color:var(--text-muted);letter-spacing:.5px;margin-bottom:10px">产出量（条形 = 相对比例）</div>
+  <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px">
+    <span style="font:400 11.5px/1 var(--font-ui);color:var(--text-secondary);width:56px;text-align:right;flex-shrink:0">组件</span>
+    <span style="display:inline-block;height:13px;width:calc((100% - 118px)*0.073);min-width:14px;background:var(--accent);opacity:.85;flex-shrink:0"></span>
+    <span style="font:600 12.5px/1 var(--font-ui);color:var(--accent);flex-shrink:0">4</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px">
+    <span style="font:400 11.5px/1 var(--font-ui);color:var(--text-secondary);width:56px;text-align:right;flex-shrink:0">评审修复</span>
+    <span style="display:inline-block;height:13px;width:calc((100% - 118px)*0.145);min-width:14px;background:var(--accent);opacity:.85;flex-shrink:0"></span>
+    <span style="font:600 12.5px/1 var(--font-ui);color:var(--accent);flex-shrink:0">8</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px">
+    <span style="font:400 11.5px/1 var(--font-ui);color:var(--text-secondary);width:56px;text-align:right;flex-shrink:0">真 bug</span>
+    <span style="display:inline-block;height:13px;width:calc((100% - 118px)*0.05);min-width:10px;background:var(--danger);opacity:.9;flex-shrink:0"></span>
+    <span style="font:600 12.5px/1 var(--font-ui);color:var(--danger);flex-shrink:0">2</span>
+    <span style="font:400 11px/1 var(--font-ui);color:var(--text-muted)">我没发现，被评审揪出</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:9px">
+    <span style="font:400 11.5px/1 var(--font-ui);color:var(--text-secondary);width:56px;text-align:right;flex-shrink:0">自动测试</span>
+    <span style="display:inline-block;height:13px;width:calc(100% - 190px);background:var(--green);opacity:.85;flex-shrink:0"></span>
+    <span style="font:600 12.5px/1 var(--font-ui);color:var(--green);flex-shrink:0">55</span>
+    <span style="font:400 10.5px/1 var(--font-ui);color:var(--text-muted);white-space:nowrap;flex-shrink:0;width:72px">v0.1.0 时 0</span>
+  </div>
+</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;margin:0 0 16px">
+  <div style="flex:1">
+    <div style="font:500 10.5px/1 var(--font-ui);color:var(--text-muted);letter-spacing:.5px;margin-bottom:8px">已交付</div>
+    <div style="font:400 12.5px/1.75 var(--font-ui);color:var(--text)">
+      <span style="display:inline-block;width:7px;height:7px;background:var(--green);border-radius:1px;margin-right:6px"></span>AMWH 四条铁律<br>
+      <span style="display:inline-block;width:7px;height:7px;background:var(--green);border-radius:1px;margin-right:6px"></span>四个图解组件<br>
+      <span style="display:inline-block;width:7px;height:7px;background:var(--green);border-radius:1px;margin-right:6px"></span>PNG + HTML 下载<br>
+      <span style="display:inline-block;width:7px;height:7px;background:var(--green);border-radius:1px;margin-right:6px"></span>GPG 签名推送
+    </div>
+  </div>
+  <div style="flex:1">
+    <div style="font:500 10.5px/1 var(--font-ui);color:var(--text-muted);letter-spacing:.5px;margin-bottom:8px">评审揪出的两类</div>
+    <div style="font:400 12.5px/1.75 var(--font-ui);color:var(--text)">
+      <span style="display:inline-block;width:7px;height:7px;background:var(--danger);border-radius:1px;margin-right:6px"></span>真 bug：文件名空格没替换<br>
+      <span style="display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:1px;margin-right:6px"></span>工艺：勾叉不对齐等 6 项
+    </div>
+  </div>
+</div>
+
+<div style="padding:9px 13px;background:var(--bg-sunken);border-radius:4px;margin-bottom:14px">
+  <span style="font:400 12.5px/1.6 var(--font-ui);color:var(--text-muted)">最狠的教训不是 bug 本身，是</span>
+  <span style="font:500 12.5px/1.6 var(--font-ui);color:var(--danger);border-bottom:1.5px dashed var(--danger)">我以为写对了，实证打了脸</span>
+</div>
+
+<style>
+.seq li.pend::before{background:transparent;border:1px dashed var(--text-muted);color:var(--text-muted)}
+.seq li.pend{opacity:.6}
+.seq li.pend b{color:var(--text-muted)}
+</style>
+<ol class="seq" style="margin-bottom:2px">
+  <li><b>看视频</b> — 78 秒提炼四条铁律</li>
+  <li><b>写组件</b> — 对照表 / 结论条 / 时序条 / 措辞标注</li>
+  <li><b>加下载</b> — 右上角两按钮</li>
+  <li><b>派设计</b> — 五维批评 30/50，挖出 2 个我没发现的 bug</li>
+  <li><b>全修 + 推</b> — F1–F8 采纳，三次提交上 GitHub</li>
+  <li class="pend"><b>装进 profile</b> — 等你动手</li>
+</ol>

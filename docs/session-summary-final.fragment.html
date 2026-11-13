@@ -1,0 +1,96 @@
+<style>
+body{font-variant-numeric:tabular-nums}
+.h{margin:0;font:500 20px/1.3 var(--font-serif);letter-spacing:-.02em} .meta{margin-top:8px;font:400 12px/1.4 var(--font-ui);color:var(--text-muted)}
+.lab{font:500 12px/1.4 var(--font-ui);letter-spacing:.06em;color:var(--text-secondary)} .t14{font:400 14px/1.4 var(--font-serif)} .t16{font:400 16px/1.4 var(--font-serif)}
+.sec{margin-top:16px;padding-top:12px;border-top:1px solid var(--border)} .air{margin-top:16px;padding-top:16px} .end{margin-top:24px}
+.band{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:16px;border-top:1px solid var(--border);padding-top:12px} .blk{}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.bars{margin-top:12px} .row{display:flex;align-items:baseline} .row+.row{margin-top:8px}
+.lbl{flex:0 0 48px;margin-right:12px;text-align:right;font:400 12px/1.4 var(--font-ui);color:var(--text-secondary)}
+.bar{align-self:center;flex:0 0 auto;min-width:8px;height:8px;border-radius:2px}
+.num{flex:0 0 auto;min-width:24px;margin-left:8px;font:600 14px/1 var(--font-ui)}
+.note{flex:0 0 auto;margin-left:8px;font:400 12px/1.4 var(--font-ui);color:var(--text-secondary);white-space:nowrap}
+.list{margin-top:12px;display:flex;flex-direction:column;gap:8px} .li{display:flex;align-items:center;gap:8px} .dot{flex:none;width:6px;height:6px;border-radius:1px}
+.em{font-weight:500;color:var(--danger);text-decoration:underline dashed 1px;text-underline-offset:4px}
+.seq{list-style:none;padding:0;margin:0;counter-reset:n;position:relative} .seq li{position:relative;margin:0;padding:0 0 4px 32px;font:400 14px/1.4 var(--font-serif)}
+.seq li:before{content:counter(n);counter-increment:n;position:absolute;left:0;top:2px;box-sizing:border-box;width:18px;height:18px;border:1px solid var(--accent);border-radius:50%;color:var(--accent);font:500 12px/16px var(--font-ui);text-align:center}
+.seq{position:relative}.seq:before{content:"";position:absolute;left:8.5px;top:20px;bottom:8px;width:1px;background:var(--text-muted);opacity:.4}.seq li:after{content:none}
+.seq li:last-child{padding-bottom:0} .seq b{font-weight:500;color:var(--text)}
+.pend{opacity:.62} .pend:before{border-style:dashed;border-color:var(--text-muted);color:var(--text-muted)} .pend b{color:var(--text-muted)}
+</style>
+
+<h1 class="h">这次会话做了什么</h1>
+<div class="meta">2026-11-02 → 11-07 · dsh-card 0.1.0 → 0.2.0</div>
+
+<div class="band">
+  <div class="blk" style="border-color:var(--accent)">
+    <div class="lab" style="color:var(--accent)">已完成</div>
+    <div class="t16" style="margin-top:8px">功能齐了 · 测试全绿 · 代码在 GitHub</div>
+  </div>
+  <div class="blk" style="border-color:var(--danger)">
+    <div class="lab" style="color:var(--danger)">还差一步</div>
+    <div class="t16" style="margin-top:8px">装进 web profile</div>
+  </div>
+</div>
+
+<div class="sec air">
+  <div class="lab">产出量（条形 = 相对比例）</div>
+  <div class="bars">
+    <div class="row">
+      <div class="lbl">组件</div>
+      <div class="bar" style="width:calc((100% - 240px)*0.073);background:var(--accent)"></div>
+      <div class="num" style="color:var(--accent)">4</div>
+    </div>
+    <div class="row">
+      <div class="lbl">评审修复</div>
+      <div class="bar" style="width:calc((100% - 240px)*0.145);background:var(--accent)"></div>
+      <div class="num" style="color:var(--accent)">8</div>
+    </div>
+    <div class="row">
+      <div class="lbl">真 bug</div>
+      <div class="bar" style="width:calc((100% - 240px)*0.05);background:var(--danger)"></div>
+      <div class="num" style="color:var(--danger)">2</div>
+      <div class="note">我没发现，被评审揪出</div>
+    </div>
+    <div class="row">
+      <div class="lbl">自动测试</div>
+      <div class="bar" style="width:calc(100% - 240px);background:var(--green)"></div>
+      <div class="num" style="color:var(--green)">55</div>
+      <div class="note">v0.1.0 时 0</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec cols">
+  <div>
+    <div class="lab">已交付</div>
+    <div class="list">
+      <div class="li"><span class="dot" style="background:var(--green)"></span><span class="t14">AMWH 四条铁律</span></div>
+      <div class="li"><span class="dot" style="background:var(--green)"></span><span class="t14">四个图解组件</span></div>
+      <div class="li"><span class="dot" style="background:var(--green)"></span><span class="t14">PNG + HTML 下载</span></div>
+      <div class="li"><span class="dot" style="background:var(--green)"></span><span class="t14">GPG 签名推送</span></div>
+    </div>
+  </div>
+  <div>
+    <div class="lab">评审揪出的两类</div>
+    <div class="list">
+      <div class="li"><span class="dot" style="background:var(--danger)"></span><span class="t14">真 bug：文件名空格没替换</span></div>
+      <div class="li"><span class="dot" style="background:var(--accent)"></span><span class="t14">工艺：勾叉不对齐等 6 项</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="sec air">
+  <div class="t16" style="color:var(--text-secondary)">最狠的教训不是 bug 本身，是 <span class="em">我以为写对了，实证打了脸</span></div>
+</div>
+
+<div class="sec end">
+  <ol class="seq">
+    <li><b>看视频</b> — 78 秒提炼四条铁律</li>
+    <li><b>写组件</b> — 对照表 / 结论条 / 时序条 / 措辞标注</li>
+    <li><b>加下载</b> — 右上角两按钮</li>
+    <li><b>派设计</b> — 五维批评 30/50，挖出 2 个我没发现的 bug</li>
+    <li><b>全修 + 推</b> — F1–F8 采纳，三次提交上 GitHub</li>
+    <li class="pend"><b>装进 profile</b> — 等你动手</li>
+  </ol>
+</div>
